@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Movie Search App">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
+    <title>Basic Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96"/>
+    <script src="script.js" defer></script>
+    <title>Basic Text To Speech</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="speechbot-image">
+      </div>
+      <div class="menu">
+        <div class="header">
+          <img src="resources/Speechbot.png" alt="" class="logo">
+          <button id="recognitionBtn"><img src="resources/Vector.png" alt="" class="icon"></button>
+        </div>
+        <div class="enter">
+          <textarea class="textarea" id="textInput" placeholder="Enter your text"></textarea>
+          <div class="instruction">Enter your text above and hit "play." You can choose a different voice by selecting an option from the dropdown menu.</div>
+        </div>
+        <div class="settings">
+          <div class="settings-title">Settings</div>
+          <div class="voice">
+            <p class="voice-title">Voice</p>
+            
+            <div class="select-wrapper">
+              <select class="select">
+                <option value="">en-US</option>
+              </select>
+             
+            </div>
+            <div class="select-wrapper">
+              <select class="select">
+                <option value="">Albert</option>
+              </select>
+              
+            </div>
+          </div>
+          <div class="speed">
+            <p class="speed-title">Speed</p>
+            <button class="speed-btn" data-speed="0.5">0.5x</button>
+            <button class="speed-btn" data-speed="0.75">0.75x</button>
+            <button class="speed-btn" data-speed="1">1x</button>
+            <button class="speed-btn" data-speed="1.5">1.5x</button>
+          </div>
+        </div>
+        <div class="submit">
+          <button id="textToSpeachBtn" type="button" class="submit-btn">Text to Speech</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

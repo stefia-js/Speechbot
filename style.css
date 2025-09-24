@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 16px;
+}
+body,
+select,
+button,
+textarea,
+.textarea::placeholder {
+    font-family: "Outfit", sans-serif;
+    color: #E3E8EF;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #1C1B43;
+}
+.speechbot-image {
+    background-image: url("resources/hero-image-text-to-speech.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 0;
+}
+.menu {
+    padding: 32px 32px 0 32px;
+    min-width: 0;
+    max-width: 611px;
+    justify-self: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: 25px;
+    width: 115px;
+    display: block;
+}
+.icon {
+    height: 28px;
+    width: 55px;
+    display: block;
+}
+.image {
+    width: 100%;
+    display: block;
+}
+
+.textarea {
+    margin-top: 40px;
+    background-color: #1E2A52;
+    border: 2px solid #2E5B84;
+    border-radius: 10px;
+    padding: 20px;
+    height: 12rem;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+.instruction {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.settings {
+    margin-top: 32px;
+}
+.settings-title {
+    font-size: 12px;
+}
+
+.voice,
+.speed {
+    display: flex;
+    border-radius: 10px;
+    background-color: #1E2A52;
+    height: 60px;
+
+    padding: 12px 20px;
+    align-items: center;
+}
+.voice {
+    margin-top: 8px;
+    gap: 32px;
+    width: 295px;
+}
+.speed {
+    margin-top: 18px;
+    gap: 8px;
+    width: 310px;
+}
+.voice-title,
+.speed-title {
+    margin-right: 16px;
+}
+
+.select-wrapper {
+    display: flex;
+    width: 80px;
+}
+.arrow {
+
+    width: 24px;
+    height: 24px;
+    right: 8px;
+}
+
+select,
+button {
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+select {
+    padding-right: 5px;
+}
+.speed-btn {
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.active {
+    background-color: #1C1B43;
+}
+.speed-btn:hover {
+    background-color: #171536;
+}
+
+.select {
+    font-size: 16px;
+}
+
+.submit-btn {
+    margin-top: 32px;
+    width: 100%;
+    padding: 16px 0;
+    border-radius: 10px;
+    background: linear-gradient(91deg, #6326a2 1.16%, #263fa9 100%);
+    box-shadow: 0px 4px 8px 0px rgba(28, 27, 67, 0.3);
+    border: none;
+    font-size: 16px;
+}
+.submit-btn:hover {
+    background: linear-gradient(91deg, #5709a0 1.16%, #0928b5 100%);
+}
+
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .speechbot-image {
+        display: none;
+    }
+}
